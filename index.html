@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Random?</title>
+</head>
+<body>
+    <main>
+        <img src="./assets/dice2.gif" alt="Dice rolling GIF">
+        <p class="main-p">Pick a random number!</p>
+        <div class="inputs">  
+            <input type="number" id="between" placeholder="BETWEEN" class="between" onchange="clearNumber()" onkeypress="clearNumber()" onclick="clearNumber()">
+            <input type="number" id="and" placeholder="AND" class="and" onchange="clearNumber()" onkeypress="clearNumber()" onclick="clearNumber()">
+        </div>
+        <button class="main-button" onclick="randomize()">RANDOM!</button>  
+        <p class="result">  ?</p>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
